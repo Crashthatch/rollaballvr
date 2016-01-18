@@ -12,8 +12,9 @@ public class RotateWithObject : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Vector3 srcRot = sourceObject.transform.localRotation.eulerAngles;
-		srcRot.y = 0;
+		//srcRot.y = 0;
 		//srcRot.x *= -1;
 		this.transform.eulerAngles = srcRot;
+		//this.transform.RotateAround (sourceObject.transform.position, Vector3.up, srcRot.x);
 	}
 }
